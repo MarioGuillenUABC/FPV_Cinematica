@@ -1,0 +1,2 @@
+C:\Users\Mario\Desktop\Escuela\6to_Semestre\FPV\GITHUB\practica_cinematica\FPV_Cinematica\Practica_Cinematica\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+C:\Users\Mario\Desktop\Escuela\6to_Semestre\FPV\GITHUB\practica_cinematica\FPV_Cinematica\Practica_Cinematica\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
