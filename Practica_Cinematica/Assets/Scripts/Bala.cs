@@ -44,26 +44,26 @@ public class Bala : MonoBehaviour
 
     void FixedUpdate()
     {
-        
-
         if (fired == true) {
             firing();
         }     
     }
 
     void firing() {
-        if (transform.position.x < d)
-        {
-            time += Time.fixedDeltaTime;
+        if (transform.position.x < d){
+            /*
+            Forma 1:
             v = v + (a * Time.fixedDeltaTime);
             p = p + (v * Time.fixedDeltaTime);
             transform.position = p;
+            */
+            //Forma 2:
+            time += Time.fixedDeltaTime;
+            Vector2 Pi = new Vector2(vo*time, (.5f) * (g) * Mathf.Pow(time, 2));
+            transform.position = Pi;
         }
-        else
-        {
+        else   {
             Calcular();
-            print("Simulated t: " + time);
-            print("Simulated y: " + transform.position.y);
         }
     }
 
@@ -80,10 +80,9 @@ public class Bala : MonoBehaviour
     void Calcular(){
         float t = d / vo;
         float y = (.5f) * (g) * Mathf.Pow(t,2);
-        print("Real t:" +t);
-        print("Real y:" +y);
 
-        textResultados = "Resultados: \nTiempo real = " + t + "\nAltura real = " + y + "\nTiempo simulado = " + time + "\nAltura simulada = " + transform.position.y;
+        textResultados = "Resultados: \nTiempo real = " + t + "\nAltura real = " + y + 
+            "\nTiempo simulado = " + time + "\nAltura simulada = " + transform.position.y;
         Resultados.text = textResultados;
     }
 

@@ -618,7 +618,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1dc96c55292f0174fb3621d3286e92ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  smoothTime: 0.2
+  smoothTime: 1
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
